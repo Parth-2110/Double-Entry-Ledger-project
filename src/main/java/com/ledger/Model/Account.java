@@ -19,6 +19,9 @@ public class Account {
     @ManyToOne
     private User user;
 
+    @Column(nullable = false)
+    private String accountNumber;
+
     @Enumerated(EnumType.STRING)
     private AccountType accountType;
 
